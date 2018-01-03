@@ -1,6 +1,6 @@
 package de.claudioaltamura.servlet.testing;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import java.io.IOException;
 
@@ -38,6 +38,6 @@ public class HelloWorldServletIntegrationTest {
 
 		CloseableHttpResponse response = httpClient.execute(request);
 		String responseAsString = EntityUtils.toString(response.getEntity());
-		assertEquals("Hello World!", responseAsString);
+		assertEquals("Hello World!", responseAsString.trim());
 	}
 }
