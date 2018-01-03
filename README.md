@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/claudioaltamura/servlet-testing-mockito.svg?branch=master)](https://travis-ci.org/claudioaltamura/servlet-testing-mockito)
+
 servlet-testing-mockito
 =======================
 
