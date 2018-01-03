@@ -2,8 +2,6 @@ package de.claudioaltamura.servlet.testing;
 
 import java.io.File;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.eclipse.jetty.annotations.AnnotationConfiguration;
 import org.eclipse.jetty.plus.webapp.EnvConfiguration;
 import org.eclipse.jetty.plus.webapp.PlusConfiguration;
@@ -19,8 +17,6 @@ import org.eclipse.jetty.webapp.WebXmlConfiguration;
 
 public class JettyServer {
 
-	private static final Log log = LogFactory.getLog(JettyServer.class);
-
 	private Server server;
 	private int port;
 
@@ -30,7 +26,6 @@ public class JettyServer {
 
 	public void start() throws Exception {
 		server = new Server(port);
-		server.addBean(log);
 
 		WebAppContext webAppContext = new WebAppContext();
 		webAppContext.setContextPath("/");
